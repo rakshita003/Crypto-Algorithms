@@ -1,28 +1,33 @@
-# Crypto Algorithms 
+# Cryptographic Algorithms and Protocols in Python
 
-This repository presents a collection of cryptographic algorithms and protocols, implemented in Python to demonstrate various aspects of modern cryptography. The algorithms showcased here span multiple cryptographic techniques, from primality testing to secure key exchange, digital signatures, and message authentication. Each algorithm is designed to explore both foundational concepts and specific vulnerabilities within cryptographic systems, offering insights into the inner workings and potential security risks.
+This repository showcases a variety of **cryptographic algorithms** and **security protocols**, all implemented in Python. It serves as a practical guide for exploring key cryptographic concepts, from prime number generation to secure key exchange, digital signatures, and message authentication. Each implementation not only demonstrates the algorithm’s functionality but also delves into the underlying mathematical principles and vulnerabilities, offering deeper insights into modern cryptography and its application in securing data and communications.
 
 ## Folder Structure
 
-- `01_miller_rabin/` - Implementation of the Miller-Rabin primality test for probabilistic prime number generation.
-- `02_rsa_crt/` - Optimized RSA implementation leveraging the Chinese Remainder Theorem (CRT) for faster modular exponentiation.
-- `03_ECDH_vs_DH_Comparison/` - A detailed comparison between Elliptic Curve Diffie-Hellman (ECDH) and traditional Diffie-Hellman (DH) key exchange protocols.
-- `04_dsa_signing/` - Digital Signature Algorithm (DSA) for secure signing and verification of messages.
-- `05_dsa_k_reuse_attack/` - A demonstration of a cryptographic vulnerability when the random value `k` is reused in DSA signatures, illustrating the risks of poor key management.
-- `06_dsa_break_discrete_log/` - An exploration of the discrete logarithm problem and how it can be exploited to break DSA signatures.
-- `07_hmac_sha512/` - Implementation of HMAC (Hash-based Message Authentication Code) using SHA-512 for verifying message integrity and authenticity.
+- [**01_miller_rabin/**](./01_miller_rabin) - Implementation of the **Miller-Rabin primality test**, a probabilistic method for generating prime numbers used in key generation.
+- [**02_rsa_crt/**](./02_rsa_crt) - Optimized **RSA encryption** using the **Chinese Remainder Theorem (CRT)** for faster modular exponentiation in encryption and decryption.
+- [**03_ECDH_vs_DH_Comparison/**](./03_ECDH_vs_DH_Comparison) - A **comparison** between **Elliptic Curve Diffie-Hellman (ECDH)** and traditional **Diffie-Hellman (DH)** key exchange protocols.
+- [**04_dsa_signing/**](./04_dsa_signing) - **Digital Signature Algorithm (DSA)** for secure message signing and verification.
+- [**05_dsa_k_reuse_attack/**](./05_dsa_k_reuse_attack) - Demonstration of a **vulnerability in DSA** when the random value `k` is reused, exposing cryptographic risks.
+- [**06_dsa_break_discrete_log/**](./06_dsa_break_discrete_log) - **Exploration** of the **discrete logarithm problem** and how it can be exploited to break DSA signatures.
+- [**07_hmac_sha512/**](./07_hmac_sha512) - Implementation of **HMAC** (Hash-based Message Authentication Code) using **SHA-512** to verify message integrity and authenticity.
 
 ## In-Depth Exploration of Cryptographic Concepts
 
-Each implementation not only demonstrates a working algorithm but also aims to provide practical insights into the theory and application of cryptography. The focus is on understanding the mathematical underpinnings and cryptographic principles behind each algorithm, as well as showcasing potential security flaws and how they can be mitigated.
+This repository goes beyond simply implementing algorithms. It aims to provide:
 
-For example, the repository delves into:
-- **Primality testing** with Miller-Rabin, a widely used probabilistic test in cryptographic key generation.
-- **RSA optimizations** using the Chinese Remainder Theorem, which significantly improves performance for large integers in RSA encryption and decryption.
-- **Key exchange mechanisms** comparing the performance and security between classic Diffie-Hellman and modern Elliptic Curve Diffie-Hellman (ECDH).
-- **Digital signature security** and attacks, such as demonstrating how poor randomness in DSA key generation can lead to severe vulnerabilities.
+- **Theoretical Insights**: Learn the foundational principles behind each cryptographic algorithm, such as modular arithmetic, prime number generation, and elliptic curve theory.
+- **Security Considerations**: Understand common vulnerabilities (e.g., **key reuse** in DSA or poor randomness in cryptographic key generation) and how they can compromise cryptographic systems.
+- **Practical Applications**: See how each algorithm is applied in real-world scenarios like secure communication, digital signatures, and data integrity.
+
+### Highlights:
+- **Primality Testing**: Explore the **Miller-Rabin** test, a fast, probabilistic method essential for **RSA** key generation.
+- **RSA Optimizations**: Learn how applying **Chinese Remainder Theorem (CRT)** optimizes the **RSA** algorithm for large integers, improving performance significantly.
+- **Key Exchange**: Understand how **ECDH** and **DH** work, comparing the security and efficiency of modern elliptic curve-based key exchange versus traditional methods.
+- **Digital Signatures**: Investigate the **DSA** algorithm and how vulnerabilities like **key reuse** can lead to catastrophic failures in security.
+- **HMAC for Authentication**: Study the **HMAC-SHA-512** algorithm for ensuring the integrity and authenticity of transmitted messages.
 
 ## Conclusion
 
-This repository serves as a learning tool and a practical guide for anyone looking to deepen their understanding of cryptographic protocols and security. It’s a resource that highlights the critical role cryptography plays in securing modern communication and data, while also revealing the importance of secure implementation practices.
+This repository is a valuable resource for anyone interested in the inner workings of cryptographic protocols. It serves as both a **learning tool** and a **practical guide** to understanding the critical importance of secure cryptographic practices. By working through the examples, you’ll gain hands-on experience with the implementation and application of cryptographic algorithms, while also learning how vulnerabilities arise and how to mitigate them.
 
