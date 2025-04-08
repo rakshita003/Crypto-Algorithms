@@ -123,11 +123,3 @@ A progress bar is displayed during the shared secret computation using `tqdm`, a
 
 This code demonstrates the **Elliptic Curve Diffie-Hellman** protocol's efficiency over the traditional **Diffie-Hellman** key exchange. ECDH achieves the same level of security with smaller key sizes and significantly faster computation, making it a more efficient choice in modern cryptographic applications.
 
-## References
-
-- [Elliptic-curve Diffie–Hellman](https://en.wikipedia.org/wiki/Elliptic-curve_Diffie%E2%80%93Hellman)
-- [Diffie–Hellman key exchange](https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange)
-- [Cryptography Library Documentation](https://cryptography.io/)
-- [TQDM Documentation](https://tqdm.github.io/)
-
----
